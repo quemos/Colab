@@ -17,4 +17,4 @@ echo "Note: Use Right-Click To Copy"
 echo "Please Keep Cloud Shell Tab Open"
 echo Root password: root
 cpu=$(echo nproc | bash)
-sudo qemu-system-x86_64 -vnc :0 -cdrom QuemOS.iso  -smp cores=$cpu  -m 3072M -machine usb=on -device usb-tablet > /dev/null 2>&1
+sudo qemu-system-x86_64 -vnc :0 -cdrom QuemOS.iso  -smp cores=8  -m 1000M -machine usb=on -device usb-tablet > /dev/null 2>&1
